@@ -19,8 +19,14 @@ header:not(.solid) .menu a,header:not(.solid) .burger{color:#fff}
 .burger span{display:block;height:1px;background:currentColor;margin:7px 6px}
 .hero{min-height:100svh;display:grid;align-items:end;color:#fff;background:linear-gradient(180deg,rgba(20,15,10,.15),rgba(20,15,10,.62)),var(--img) center/cover}
 .hero.short{min-height:62svh}
-.hero.fit{background:linear-gradient(180deg,rgba(0,0,0,.05) 40%,rgba(0,0,0,.55)),var(--img) center 76px/100% auto no-repeat #0d0d0d;min-height:auto;aspect-ratio:auto}
-.hero.fit .wrap{padding-top:calc(76px + 32.3vw + 44px);padding-bottom:60px}
+.hero.fit{margin-top:76px;min-height:0;aspect-ratio:1162/375;align-items:end;background:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.45) 45%,rgba(0,0,0,.05) 80%),linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.6)),var(--img) center/100% 100% no-repeat #0d0d0d}
+.hero.fit h1 em{display:block}
+.hero.fit h1,.hero.fit p{text-shadow:0 2px 14px rgba(0,0,0,.65)}
+.hero.fit .wrap{padding-bottom:3.2vw}
+.hero.fit h1{font-size:clamp(2rem,4.6vw,4.2rem)}
+.hero.fit .eyebrow{font-size:clamp(.6rem,.8vw,.75rem)}
+.hero.fit p:not(.eyebrow){margin-top:.6vw;font-size:clamp(.8rem,1.1vw,1.05rem)}
+.hero.fit .btn{margin-top:1.6vw;padding:clamp(8px,1vw,14px) clamp(16px,2.2vw,30px)}
 .hero .wrap{padding-bottom:10vh;width:100%}
 .hero h1{font-size:clamp(3rem,9vw,7rem)}
 .hero h1 em{font-style:italic;color:#e9cfae}
@@ -81,6 +87,12 @@ footer{background:#000;color:#cfc6bb;padding:50px 0 30px;font-size:.9rem}
 .lb button{position:absolute;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;padding:16px}
 .lb .x{top:10px;right:16px}.lb .p{left:10px}.lb .n{right:10px}
 @media (max-width:900px){
+ .hero.fit{aspect-ratio:auto;background:linear-gradient(180deg,rgba(0,0,0,.05) 40%,rgba(0,0,0,.55)),var(--img) center 76px/100% auto no-repeat #0d0d0d;margin-top:0}
+ .hero.fit .wrap{padding-top:calc(76px + 32.3vw + 36px);padding-bottom:50px}
+ .hero.fit h1{font-size:clamp(3rem,9vw,7rem)}
+ .hero.fit .eyebrow{font-size:.75rem}
+ .hero.fit p:not(.eyebrow){margin-top:16px;font-size:1.1rem}
+ .hero.fit .btn{margin-top:28px;padding:14px 30px}
  .menu{position:fixed;inset:76px 0 auto;flex-direction:column;gap:0;background:var(--bg);padding:10px 24px 20px;display:none;box-shadow:0 10px 20px rgba(0,0,0,.5)}
  .menu.open{display:flex}.menu a{display:block;padding:12px 0;color:var(--ink)!important}
  .burger{display:block}
