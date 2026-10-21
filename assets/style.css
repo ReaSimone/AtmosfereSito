@@ -19,6 +19,8 @@ header:not(.solid) .menu a,header:not(.solid) .burger{color:#fff}
 .burger span{display:block;height:1px;background:currentColor;margin:7px 6px}
 .hero{min-height:100svh;display:grid;align-items:end;color:#fff;background:linear-gradient(180deg,rgba(20,15,10,.15),rgba(20,15,10,.62)),var(--img) center/cover}
 .hero.short{min-height:62svh}
+.hero.fit{background:linear-gradient(180deg,rgba(0,0,0,.05) 40%,rgba(0,0,0,.55)),var(--img) center 76px/100% auto no-repeat #0d0d0d;min-height:auto;aspect-ratio:auto}
+.hero.fit .wrap{padding-top:calc(76px + 32.3vw + 44px);padding-bottom:60px}
 .hero .wrap{padding-bottom:10vh;width:100%}
 .hero h1{font-size:clamp(3rem,9vw,7rem)}
 .hero h1 em{font-style:italic;color:#e9cfae}
