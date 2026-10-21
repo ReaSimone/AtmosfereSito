@@ -34,9 +34,8 @@ section{padding:100px 0}
 .verbs{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:26px;font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-style:italic;color:var(--accent)}
 .service{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:70px 0;border-top:1px solid var(--line)}
 .service:nth-child(even) .s-img{order:2}
-.s-img{aspect-ratio:4/3;overflow:hidden;display:block}
-.s-img{background:var(--paper)}
-.s-img img{width:100%;height:100%;object-fit:contain;transition:transform 1.2s}
+.s-img{overflow:hidden;display:block}
+.s-img img{width:100%;height:auto;transition:transform 1.2s}
 .service:hover .s-img img{transform:scale(1.04)}
 .service h3{font-size:clamp(2rem,4vw,3rem);margin:10px 0 16px}
 blockquote{margin-top:18px;font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-style:italic;color:var(--accent)}
