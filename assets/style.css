@@ -19,10 +19,12 @@ header:not(.solid) .menu a,header:not(.solid) .burger{color:#fff}
 .burger span{display:block;height:1px;background:currentColor;margin:7px 6px}
 .hero{min-height:100svh;display:grid;align-items:end;color:#fff;background:linear-gradient(180deg,rgba(20,15,10,.15),rgba(20,15,10,.62)),var(--img) center/cover}
 .hero.short{min-height:62svh}
-.hero.fit{margin-top:76px;min-height:0;aspect-ratio:1162/375;align-items:end;background:linear-gradient(90deg,rgba(0,0,0,.86) 0%,rgba(0,0,0,.6) 40%,rgba(0,0,0,.08) 75%),linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.6)),var(--img) center/100% 100% no-repeat #0d0d0d}
+.hero.fit{margin-top:76px;min-height:0;aspect-ratio:1162/375;align-items:end;background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.78) 45%,rgba(0,0,0,.35) 85%),linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),var(--img) center/100% 100% no-repeat #0d0d0d}
 .hero.fit h1 em{display:block}
 .hero.fit h1,.hero.fit p{text-shadow:0 2px 6px rgba(0,0,0,.8),0 4px 24px rgba(0,0,0,.7)}
-.hero.fit p:not(.eyebrow){max-width:min(560px,48vw);color:#f6f0e8}
+.hero.fit p:not(.eyebrow){max-width:min(560px,48vw);color:#fff;font-weight:400}
+.hero.fit h1{font-weight:500}
+.hero.fit h1 em{color:#f3d9b5}
 .hero.fit .wrap{padding-bottom:3.2vw}
 .hero.fit h1{font-size:clamp(2rem,4.6vw,4.2rem)}
 .hero.fit .eyebrow{font-size:clamp(.68rem,1vw,.9rem);letter-spacing:.3em;font-weight:500;color:#f0d6b3}
@@ -88,7 +90,7 @@ footer{background:#000;color:#cfc6bb;padding:50px 0 30px;font-size:.9rem}
 .lb button{position:absolute;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;padding:16px}
 .lb .x{top:10px;right:16px}.lb .p{left:10px}.lb .n{right:10px}
 @media (max-width:900px){
- .hero.fit{margin-top:0;aspect-ratio:auto;min-height:88svh;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.78)),var(--img) 38% center/cover no-repeat #0d0d0d}
+ .hero.fit{margin-top:0;aspect-ratio:auto;min-height:88svh;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.88)),var(--img) 38% center/cover no-repeat #0d0d0d}
  .hero.fit .wrap{padding-top:110px;padding-bottom:48px}
  .hero.fit h1{font-size:clamp(2.6rem,12vw,4rem)}
  .hero.fit .eyebrow{font-size:.7rem}
