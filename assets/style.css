@@ -87,12 +87,12 @@ footer{background:#000;color:#cfc6bb;padding:50px 0 30px;font-size:.9rem}
 .lb button{position:absolute;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer;padding:16px}
 .lb .x{top:10px;right:16px}.lb .p{left:10px}.lb .n{right:10px}
 @media (max-width:900px){
- .hero.fit{aspect-ratio:auto;background:linear-gradient(180deg,rgba(0,0,0,.05) 40%,rgba(0,0,0,.55)),var(--img) center 76px/100% auto no-repeat #0d0d0d;margin-top:0}
- .hero.fit .wrap{padding-top:calc(76px + 32.3vw + 36px);padding-bottom:50px}
- .hero.fit h1{font-size:clamp(3rem,9vw,7rem)}
- .hero.fit .eyebrow{font-size:.75rem}
- .hero.fit p:not(.eyebrow){margin-top:16px;font-size:1.1rem}
- .hero.fit .btn{margin-top:28px;padding:14px 30px}
+ .hero.fit{margin-top:0;aspect-ratio:auto;min-height:88svh;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.78)),var(--img) 38% center/cover no-repeat #0d0d0d}
+ .hero.fit .wrap{padding-top:110px;padding-bottom:48px}
+ .hero.fit h1{font-size:clamp(2.6rem,12vw,4rem)}
+ .hero.fit .eyebrow{font-size:.7rem}
+ .hero.fit p:not(.eyebrow){margin-top:14px;font-size:1rem}
+ .hero.fit .btn{margin-top:24px;padding:13px 26px}
  .menu{position:fixed;inset:76px 0 auto;flex-direction:column;gap:0;background:var(--bg);padding:10px 24px 20px;display:none;box-shadow:0 10px 20px rgba(0,0,0,.5)}
  .menu.open{display:flex}.menu a{display:block;padding:12px 0;color:var(--ink)!important}
  .burger{display:block}
