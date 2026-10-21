@@ -2,7 +2,7 @@ const h=document.querySelector('header');const sc=()=>h.classList.toggle('solid'
 const menu=document.querySelector('.menu'),bur=document.querySelector('.burger');
 bur.onclick=()=>{menu.classList.toggle('open');bur.setAttribute('aria-expanded',menu.classList.contains('open'))};
 const lb=document.querySelector('.lb');
-if(lb){const li=lb.querySelector('img');let L=[],i=0;const show=()=>li.src=L[i].dataset.full;
+if(lb){const li=lb.querySelector('img');let L=[],i=0;const pre=u=>{const im=new Image();im.src=u};const show=()=>{const g=L[i],t=g.querySelector('img');li.src=t?t.currentSrc||t.src:'';const f=new Image();f.onload=()=>{if(L[i]===g)li.src=f.src};f.src=g.dataset.full;[L[(i+1)%L.length],L[(i-1+L.length)%L.length]].forEach(x=>x&&pre(x.dataset.full))};
  document.querySelectorAll('.g').forEach(g=>g.onclick=()=>{L=[...g.closest('.grid').querySelectorAll('.g')];i=L.indexOf(g);show();lb.classList.add('open')});
  const close=()=>lb.classList.remove('open');
  lb.querySelector('.x').onclick=close;
