@@ -31,13 +31,13 @@ header:not(.solid) .menu a,header:not(.solid) .burger{color:#fff}
 .hero.fit{margin-top:76px;min-height:0;aspect-ratio:1162/375;align-items:end;background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.78) 45%,rgba(0,0,0,.35) 85%),linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),var(--img) center/100% 100% no-repeat #0d0d0d}
 .hero.fit h1 em{display:block}
 .hero.fit h1,.hero.fit p{text-shadow:0 2px 6px rgba(0,0,0,.8),0 4px 24px rgba(0,0,0,.7)}
-.hero.fit p:not(.eyebrow){max-width:min(560px,48vw);color:#fff;font-weight:400}
+.hero.fit p:not(.eyebrow){max-width:min(560px,48vw);color:#dcb46e;font-weight:400}
 .hero.fit h1{font-weight:500}
 .hero.fit h1 em{color:#f3d9b5}
 .hero.fit .wrap{padding-bottom:3.2vw}
 .hero.fit h1{font-size:clamp(2rem,4.6vw,4.2rem)}
 .hero.fit h1 .hero-logo{display:block;height:clamp(78px,9vw,130px);width:auto;margin:.15em 0 .25em;filter:drop-shadow(0 2px 8px rgba(0,0,0,.8))}
-.hero.fit .eyebrow{font-size:clamp(.68rem,1vw,.9rem);letter-spacing:.3em;font-weight:500;color:#f0d6b3}
+.hero.fit .eyebrow{font-size:clamp(.68rem,1vw,.9rem);letter-spacing:.3em;font-weight:500;color:#fff}
 .hero.fit p:not(.eyebrow){margin-top:.8vw;font-size:clamp(.9rem,1.3vw,1.2rem);line-height:1.6}
 .hero.fit .btn{background:rgba(0,0,0,.35);border-color:#f0d6b3;color:#f6f0e8;margin-top:1.6vw;padding:clamp(8px,1vw,14px) clamp(16px,2.2vw,30px)}
 .hero .wrap{padding-bottom:10vh;width:100%}
